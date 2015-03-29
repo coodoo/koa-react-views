@@ -5,7 +5,7 @@ Use react as template engine in koa applications
 
 ## Why?
 
-It's a very powerful and robust approach to build application views in a component way, React and JSX helps to make this happen in a more enjoyable way.
+It's a very powerful and robust approach to build application views with components, React and JSX helps to make this happen in a more enjoyable way, so why not?
 
 ## Attention
 
