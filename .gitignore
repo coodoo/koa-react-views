@@ -1,0 +1,11 @@
+.DS_Store
+.project
+.swarm
+repos/
+bower_components
+bundle
+build
+dist
+npm-debug.log
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,21 @@
+{
+  "name": "koa-react-views",
+  "version": "1.0.0",
+  "description": "Use react as template engine for koa applications",
+  "main": "app.js",
+  "dependencies": {
+    "co": "^4.5.1",
+    "co-render": "^0.1.0",
+    "jade": "^1.9.2",
+    "koa": "^0.18.1",
+    "koa-router": "^4.2.0",
+    "react": "^0.13.1",
+    "react-tools": "^0.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Lu <jeremy@pubulous.com>",
+  "license": "MIT"
+}
