@@ -16,3 +16,5 @@ npm install git+https://git@github.com/yeojz/consolidate.js.git#support-reactjs-
 ```
 
 Once installed, replace the one in `node_modules/co-render/node_modules` with the patched one.
+
+To make it even easier to use, I pushed `npm_modules` to the repo (yes I know it's a bad habit but it's for a good reason).
