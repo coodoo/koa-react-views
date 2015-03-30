@@ -6,7 +6,10 @@ var comp = React.createClass({
   render: function() {
 
   	return (
-  		<h2>{this.props.user.species}</h2>		
+  		<div>
+	  		Some name2:<br/>
+	  		<h2>{this.props.user.species}</h2>		
+  		</div>
     );
   },
 

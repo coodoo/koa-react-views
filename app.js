@@ -22,8 +22,9 @@ router.get( '/', function *(){
 	// co-views  的好處是將 template engine 必用參數預先傳入，
 	// 得回一支 render() 指令，方便之後用
 	
-	// 'templates' 是放 jsx 檔案的位置
-	var render = views( 'templates', 
+	// 將 co-views 返還的 render() 附掛到 koa app 身上
+	// 將來即可在任何地方執行 this.render(...) 來操作 template engine
+	this.render = views( 'templates', // 'templates' 是放 jsx 檔案的位置
 						
 						{ 
 							// 預設副檔名，將來 render() 時就不用重寫
@@ -45,7 +46,7 @@ router.get( '/', function *(){
 						});
 	
 	// 之後使用時只要指定需要的 tempalte file 名稱，就會去 'templates/user.jsx' 內找檔案
-	var resultString = yield render( 'user', 
+	var resultString = yield this.render( 'user', 
 									 // 這個是真正傳入 react template 的資料
 									 { user: loki });
 
